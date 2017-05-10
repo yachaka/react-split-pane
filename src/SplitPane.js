@@ -197,6 +197,7 @@ class SplitPane extends React.Component {
                 width: '100%',
             });
         }
+        Object.assign(style, styleProps);
 
         const classes = ['SplitPane', className, split, disabledClass];
         const pane1Style = prefixer.prefix(Object.assign({}, paneStyle || {}, pane1StyleProps || {}));
